@@ -1,38 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 .App {
+  width: 100%;
+}
+.wather {
+  width: 400px;
+  margin: auto;
+}
+.wather_box {
+  /* background-color: #fff; */
+  box-shadow: 0px 0px 20px #9b9b9b;
+  text-align: center;
+  padding: 171px 20px 20px 20px;
+  border-radius: 10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-image: url(assets/Cloudy_Animation.gif);
+}
+.inputData {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputFildData {
+  border: 2px solid #c3bfbf;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 15px;
+  width: 100%;
+  font-size: 20px;
+  box-shadow: 0 0 20px #c7c7c7;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.contry {
+  text-transform: capitalize;
+  font-size: 60px;
+  text-shadow: 2px 5px 6px #7f98f4;
+  color: #1a47f1;
+}
+.stateData {
+  font-size: 35px;
+  margin: 0px 0px;
+}
+.minMax {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.notFound {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.navbar {
+  margin-left: 8%;
+  padding: 1% 0 0px;
+}
+.logo_img {
+  height: 70px;
+  width: 70px;
+  background-size: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px #998f8f;
+  border-radius: 50%;
+  padding: 7px;
+}
+.logo_img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.logo_text {
+  display: inline-block;
+  position: absolute;
+  background: #fff;
+  color: blueviolet;
+  padding: 10px 10px 10px 35px;
+  box-shadow: 0px 0px 20px #7c7c7ccc;
+  margin-left: -20px;
+  z-index: -1;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 479px) and (max-width: 900px) {
+  .wather {
+    width: calc(100% - 30px);
+    margin: 0 15px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.footer {
+  width: calc(100% - 40%);
+  padding: 45px 20% 0;
 }
-
-.App-link {
-  color: #61dafb;
+.footer_container {
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myName {
+  color: #1a47f1;
 }
